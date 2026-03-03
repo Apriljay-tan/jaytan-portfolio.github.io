@@ -223,6 +223,49 @@
             line-height: 1.6;
         }
 
+        /* ====== Download Button ====== */
+        .download-wrapper {
+            margin-top: 14px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.7);
+            background: radial-gradient(circle at 0 0, rgba(129, 140, 248, 0.6), rgba(15, 23, 42, 0.95));
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.55),
+                0 0 0 1px rgba(15, 23, 42, 0.9) inset;
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 0.8rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+        }
+
+        .download-btn-icon {
+            font-size: 1rem;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-1px);
+            box-shadow:
+                0 14px 30px rgba(0, 0, 0, 0.7),
+                0 0 0 1px rgba(129, 140, 248, 0.9) inset;
+            background: radial-gradient(circle at 0 0, rgba(129, 140, 248, 0.9), rgba(15, 23, 42, 1));
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+            box-shadow:
+                0 8px 18px rgba(0, 0, 0, 0.6),
+                0 0 0 1px rgba(129, 140, 248, 0.9) inset;
+        }
+
         @media (max-width: 860px) {
             body {
                 padding: 20px;
@@ -232,116 +275,122 @@
                 grid-template-columns: 1fr;
             }
         }
+
         /* =========================
-   PRINT FIX – LEGAL SIZE
-   ========================= */
+           PRINT FIX – LEGAL SIZE
+           ========================= */
 
-@page {
-  size: legal;
-  margin: 0;
-}
+        @page {
+            size: legal;
+            margin: 0;
+        }
 
-@media print {
+        @media print {
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 216mm;
-    height: 356mm;
-    background: #020617 !important;
-  }
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 216mm;
+                height: 356mm;
+                background: #020617 !important;
+            }
 
-  body {
-    display: block;
-  }
+            body {
+                display: block;
+            }
 
-  .resume-wrapper {
-    width: 216mm;
-    max-width: 216mm;
-    margin: 0 auto;
-    padding: 18mm 18mm;
-    box-sizing: border-box;
-  }
+            .resume-wrapper {
+                width: 216mm;
+                max-width: 216mm;
+                margin: 0 auto;
+                padding: 18mm 18mm;
+                box-sizing: border-box;
+            }
 
-  .glass {
-    box-shadow: none;       /* cleaner PDF */
-    backdrop-filter: none;  /* avoids blur glitches */
-  }
+            .glass {
+                box-shadow: none;
+                backdrop-filter: none;
+            }
 
-  .glass.left,
-  .glass.right {
-    page-break-inside: avoid;
-  }
-}
-/* =========================
-   A4 ONE-PAGE PRINT / PDF
-   ========================= */
+            .glass.left,
+            .glass.right {
+                page-break-inside: avoid;
+            }
 
-@page {
-  size: A4;
-  margin: 0;
-}
+            /* hide the web download button in print */
+            .download-wrapper {
+                display: none !important;
+            }
+        }
 
-@media print {
+        /* =========================
+           A4 ONE-PAGE PRINT / PDF
+           ========================= */
 
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    width: 210mm;
-    height: 297mm;
-    background: #020617 !important; /* keep dark background */
-  }
+        @page {
+            size: A4;
+            margin: 0;
+        }
 
-  body {
-    display: block;
-  }
+        @media print {
 
-  /* main resume container */
-  .resume-wrapper {
-    width: 210mm;
-    max-width: 210mm;
-    margin: 0;
-    padding: 10mm 12mm;          /* inner margin on the page */
-    box-sizing: border-box;
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 210mm;
+                height: 297mm;
+                background: #020617 !important;
+            }
 
-    /* 🔽 scale everything so it fits on ONE A4 page */
-    transform: scale(0.9);
-    transform-origin: top left;
-  }
+            body {
+                display: block;
+            }
 
-  /* lighter rendering for PDF */
-  .glass {
-    box-shadow: none;
-    backdrop-filter: none;
-  }
+            .resume-wrapper {
+                width: 210mm;
+                max-width: 210mm;
+                margin: 0;
+                padding: 10mm 12mm;
+                box-sizing: border-box;
+                transform: scale(0.9);
+                transform-origin: top left;
+            }
 
-  /* slightly smaller avatar in print to save vertical space */
-  .avatar {
-    height: 380px;
-  }
+            .glass {
+                box-shadow: none;
+                backdrop-filter: none;
+            }
 
-  /* tiny font shrink so nothing overflows at the bottom */
-  .name {
-    font-size: 1.9rem;
-  }
+            .avatar {
+                height: 380px;
+            }
 
-  .paragraph,
-  .contact-item,
-  .skills-list .skill-pill,
-  li,
-  .edu-degree,
-  .edu-school,
-  .references-list {
-    font-size: 0.8rem;
-  }
+            .name {
+                font-size: 1.9rem;
+            }
 
-  /* avoid page breaks through the glass cards */
-  .glass.left,
-  .glass.right {
-    page-break-inside: avoid;
-  }
-}
+            .paragraph,
+            .contact-item,
+            .skills-list .skill-pill,
+            li,
+            .edu-degree,
+            .edu-school,
+            .references-list {
+                font-size: 0.8rem;
+            }
+
+            .glass.left,
+            .glass.right {
+                page-break-inside: avoid;
+            }
+
+            /* hide button in A4 print too */
+            .download-wrapper {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -350,12 +399,22 @@
         <!-- LEFT PANEL -->
         <div class="glass left">
             <div class="avatar">
-    <img src="assets/jay.png" alt="April Jay Tan">
-</div>
+                <img src="assets/jay.png" alt="April Jay Tan">
+            </div>
 
             <div>
                 <div class="name">April Jay<br>Tan</div>
                 <div class="subtitle">Marketing Head Officer</div>
+
+                <!-- DOWNLOAD BUTTON (view / download PDF from Drive) -->
+                <div class="download-wrapper">
+                    <a class="download-btn"
+                        href="https://drive.google.com/file/d/1Aj-Jf7050TKVl7MHgRZnS3eeMtMEQy2Q/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="download-btn-icon">⬇</span>
+                        <span>View & Download PDF Resume</span>
+                    </a>
+                </div>
             </div>
 
             <div>
@@ -384,32 +443,32 @@
                 <div class="section-title">Core Skills</div>
                 <div class="skills-list">
                     <span class="skill-pill">Marketing Strategy & Planning</span>
-<span class="skill-pill">Performance Marketing (Meta Ads)</span>
-<span class="skill-pill">Conversion Tracking & Analytics</span>
-<span class="skill-pill">SEO & Website Optimization</span>
-<span class="skill-pill">CRM Development & Automation</span>
-<span class="skill-pill">Creative Direction & Multimedia Production</span>
-<span class="skill-pill">Video Editing & Visual Storytelling</span>
-<span class="skill-pill">Brand Identity & Design Systems</span>
-<span class="skill-pill">Content Strategy</span>
+                    <span class="skill-pill">Performance Marketing (Meta Ads)</span>
+                    <span class="skill-pill">Conversion Tracking & Analytics</span>
+                    <span class="skill-pill">SEO & Website Optimization</span>
+                    <span class="skill-pill">CRM Development & Automation</span>
+                    <span class="skill-pill">Creative Direction & Multimedia Production</span>
+                    <span class="skill-pill">Video Editing & Visual Storytelling</span>
+                    <span class="skill-pill">Brand Identity & Design Systems</span>
+                    <span class="skill-pill">Content Strategy</span>
                 </div>
             </div>
 
             <div class="section-title">Software & Tools</div>
-<div class="skills-list">
-    <!-- Digital / Marketing Tools First -->
-    <span class="skill-pill">Meta Ads Manager</span>
-    <span class="skill-pill">Meta Pixel & Event Setup</span>
-    <span class="skill-pill">Google Analytics / GA4</span>
-    <span class="skill-pill">Firebase</span>
-    <span class="skill-pill">Web Development (HTML/CSS/JS)</span>
+            <div class="skills-list">
+                <!-- Digital / Marketing Tools First -->
+                <span class="skill-pill">Meta Ads Manager</span>
+                <span class="skill-pill">Meta Pixel & Event Setup</span>
+                <span class="skill-pill">Google Analytics / GA4</span>
+                <span class="skill-pill">Firebase</span>
+                <span class="skill-pill">Web Development (HTML/CSS/JS)</span>
 
-    <!-- Creative Tools After -->
-    <span class="skill-pill">Photoshop</span>
-    <span class="skill-pill">Illustrator</span>
-    <span class="skill-pill">Premiere Pro</span>
-    <span class="skill-pill">After Effects</span>
-</div>
+                <!-- Creative Tools After -->
+                <span class="skill-pill">Photoshop</span>
+                <span class="skill-pill">Illustrator</span>
+                <span class="skill-pill">Premiere Pro</span>
+                <span class="skill-pill">After Effects</span>
+            </div>
 
             <div>
                 <div class="section-title">Key Digital Projects</div>
@@ -434,8 +493,9 @@
                         <li>Lead overall marketing strategy and campaigns across digital and offline channels.</li>
                         <li>Implemented Meta Pixel, event tracking, and conversion goals to monitor leads from Facebook
                             ads and website visits.</li>
-                        <li>Built and managed the Knowtify Alarm website, Lifesmartph, and Fineupgrades website, including layout, on-page SEO, and mobile
-                            performance optimization for better search visibility.</li>
+                        <li>Built and managed the Knowtify Alarm website, Lifesmartph, and Fineupgrades website,
+                            including layout, on-page SEO, and mobile performance optimization for better search
+                            visibility.</li>
                         <li>Designed and developed a custom CRM for Knowtify (using web tools and Firebase) to capture
                             leads, track status, and support the sales team’s follow-up process.</li>
                         <li>Conceptualized, shot, and edited product and brand videos for social media and web.</li>
