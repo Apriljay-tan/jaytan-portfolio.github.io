@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>April Jay Tan - Marketing Head Officer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: radial-gradient(circle at top left, #1e293b, #020617);
+            color: #e5e7eb;
+        }
+
+        .resume-wrapper {
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1.2fr 2fr;
+            gap: 24px;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.55);
+            border-radius: 24px;
+            padding: 24px;
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            box-shadow:
+                0 18px 45px rgba(0, 0, 0, 0.6),
+                0 0 0 1px rgba(15, 23, 42, 0.8) inset;
+            backdrop-filter: blur(18px);
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 450px; /* size of the blue box */
+            border-radius: 24px;
+            padding: 14px 18px 18px; /* space between box edge and photo */
+            background: radial-gradient(circle at 20% 0%, #38bdf8, #0f172a);
+            border: 1px solid rgba(148, 163, 184, 0.5);
+            box-shadow:
+                0 18px 45px rgba(0, 0, 0, 0.35),
+                0 0 0 1px rgba(15, 23, 42, 0.7) inset;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* your photo clipped INSIDE that box */
+        .avatar img {
+            height: 100%; /* fills the inner area vertically */
+            width: auto;
+            object-fit: contain;
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+
+        /* remove the "YOUR PHOTO HERE" text */
+        .avatar::after {
+            content: "";
+        }
+
+        .name {
+            font-size: 2.1rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            margin-top: 6px;
+            font-size: 0.95rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #a5b4fc;
+        }
+
+        .section-title {
+            font-size: 0.86rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 9px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.5);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: #cbd5f5;
+            margin-bottom: 8px;
+        }
+
+        .paragraph {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: #e2e8f0;
+        }
+
+        .contact-item {
+            font-size: 0.86rem;
+            margin-bottom: 6px;
+            color: #cbd5f5;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.18em;
+            color: #64748b;
+            display: block;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill-pill {
+            font-size: 0.78rem;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.5);
+            background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.3), rgba(15, 23, 42, 0.6));
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .experience-item,
+        .education-item {
+            margin-bottom: 14px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #e5e7eb;
+        }
+
+        .company {
+            font-size: 0.9rem;
+            color: #cbd5f5;
+        }
+
+        .job-dates {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: #94a3b8;
+            margin-top: 2px;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 4px;
+        }
+
+        li {
+            font-size: 0.86rem;
+            line-height: 1.5;
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 14px;
+            color: #dbeafe;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #38bdf8;
+        }
+
+        .edu-degree {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #e5e7eb;
+        }
+
+        .edu-school {
+            font-size: 0.86rem;
+            color: #cbd5f5;
+        }
+
+        .references-list {
+            font-size: 0.84rem;
+            color: #cbd5f5;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 860px) {
+            body {
+                padding: 20px;
+            }
+
+            .resume-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* =========================
+   PRINT FIX – LEGAL SIZE
+   ========================= */
+
+@page {
+  size: legal;
+  margin: 0;
+}
+
+@media print {
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 216mm;
+    height: 356mm;
+    background: #020617 !important;
+  }
+
+  body {
+    display: block;
+  }
+
+  .resume-wrapper {
+    width: 216mm;
+    max-width: 216mm;
+    margin: 0 auto;
+    padding: 18mm 18mm;
+    box-sizing: border-box;
+  }
+
+  .glass {
+    box-shadow: none;       /* cleaner PDF */
+    backdrop-filter: none;  /* avoids blur glitches */
+  }
+
+  .glass.left,
+  .glass.right {
+    page-break-inside: avoid;
+  }
+}
+/* =========================
+   A4 ONE-PAGE PRINT / PDF
+   ========================= */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 210mm;
+    height: 297mm;
+    background: #020617 !important; /* keep dark background */
+  }
+
+  body {
+    display: block;
+  }
+
+  /* main resume container */
+  .resume-wrapper {
+    width: 210mm;
+    max-width: 210mm;
+    margin: 0;
+    padding: 10mm 12mm;          /* inner margin on the page */
+    box-sizing: border-box;
+
+    /* 🔽 scale everything so it fits on ONE A4 page */
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
+
+  /* lighter rendering for PDF */
+  .glass {
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  /* slightly smaller avatar in print to save vertical space */
+  .avatar {
+    height: 380px;
+  }
+
+  /* tiny font shrink so nothing overflows at the bottom */
+  .name {
+    font-size: 1.9rem;
+  }
+
+  .paragraph,
+  .contact-item,
+  .skills-list .skill-pill,
+  li,
+  .edu-degree,
+  .edu-school,
+  .references-list {
+    font-size: 0.8rem;
+  }
+
+  /* avoid page breaks through the glass cards */
+  .glass.left,
+  .glass.right {
+    page-break-inside: avoid;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="resume-wrapper">
+        <!-- LEFT PANEL -->
+        <div class="glass left">
+            <div class="avatar">
+                <img src="jay.png" alt="April Jay Tan">
+            </div>
+
+            <div>
+                <div class="name">April Jay<br>Tan</div>
+                <div class="subtitle">Marketing Head Officer</div>
+            </div>
+
+            <div>
+                <div class="section-title">Profile</div>
+                <div class="chip">Marketing & Multimedia</div>
+                <p class="paragraph">
+                    Results-driven marketing head and multimedia artist skilled in campaign strategy, web design, and
+                    visual storytelling. Hands-on technical marketer: implements Meta Pixel and event tracking,
+                    builds custom web tools and CRM systems, and optimizes landing pages for lead generation and sales.
+                </p>
+            </div>
+
+            <div>
+                <div class="section-title">Contact</div>
+                <p class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    +63 994-535-9076
+                </p>
+                <p class="contact-item">
+                    <span class="contact-label">Email</span>
+                    jay@jtanmediaworks.com
+                </p>
+            </div>
+
+            <div>
+                <div class="section-title">Core Skills</div>
+                <div class="skills-list">
+                    <span class="skill-pill">Marketing Strategy & Planning</span>
+<span class="skill-pill">Performance Marketing (Meta Ads)</span>
+<span class="skill-pill">Conversion Tracking & Analytics</span>
+<span class="skill-pill">SEO & Website Optimization</span>
+<span class="skill-pill">CRM Development & Automation</span>
+<span class="skill-pill">Creative Direction & Multimedia Production</span>
+<span class="skill-pill">Video Editing & Visual Storytelling</span>
+<span class="skill-pill">Brand Identity & Design Systems</span>
+<span class="skill-pill">Content Strategy</span>
+                </div>
+            </div>
+
+            <div class="section-title">Software & Tools</div>
+<div class="skills-list">
+    <!-- Digital / Marketing Tools First -->
+    <span class="skill-pill">Meta Ads Manager</span>
+    <span class="skill-pill">Meta Pixel & Event Setup</span>
+    <span class="skill-pill">Google Analytics / GA4</span>
+    <span class="skill-pill">Firebase</span>
+    <span class="skill-pill">Web Development (HTML/CSS/JS)</span>
+
+    <!-- Creative Tools After -->
+    <span class="skill-pill">Photoshop</span>
+    <span class="skill-pill">Illustrator</span>
+    <span class="skill-pill">Premiere Pro</span>
+    <span class="skill-pill">After Effects</span>
+</div>
+
+            <div>
+                <div class="section-title">Key Digital Projects</div>
+                <div class="skills-list">
+                    <span class="skill-pill">Knowtify Alarm – Website & SEO</span>
+                    <span class="skill-pill">Knowtify – Custom Lead CRM</span>
+                    <span class="skill-pill">LifeSmart PH – Meta Pixel Setup</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="glass right">
+            <section>
+                <div class="section-title">Experience</div>
+
+                <div class="experience-item">
+                    <div class="job-title">Marketing Head Officer</div>
+                    <div class="company">LifeSmart PH (Fine Upgrades) – Knowtify Alarm</div>
+                    <div class="job-dates">2025 – Present</div>
+                    <ul>
+                        <li>Lead overall marketing strategy and campaigns across digital and offline channels.</li>
+                        <li>Implemented Meta Pixel, event tracking, and conversion goals to monitor leads from Facebook
+                            ads and website visits.</li>
+                        <li>Built and managed the Knowtify Alarm website, Lifesmartph, and Fineupgrades website, including layout, on-page SEO, and mobile
+                            performance optimization for better search visibility.</li>
+                        <li>Designed and developed a custom CRM for Knowtify (using web tools and Firebase) to capture
+                            leads, track status, and support the sales team’s follow-up process.</li>
+                        <li>Conceptualized, shot, and edited product and brand videos for social media and web.</li>
+                        <li>Aligned marketing activities with sales targets and promotions to support revenue growth.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Graphic and Web Designer</div>
+                    <div class="company">Homesourced Inc. (PYN LLC)</div>
+                    <div class="job-dates">2024 – 2025 (July)</div>
+                    <ul>
+                        <li>Designed front-end layouts for landing pages, websites, and funnels.</li>
+                        <li>Produced marketing graphics and edited videos aligned with campaign goals.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Graphic Designer</div>
+                    <div class="company">MM Ermac Enterprises / Diamond Garments</div>
+                    <div class="job-dates">2022 – 2024</div>
+                    <ul>
+                        <li>Created full-sublimation apparel designs and custom clothing layouts.</li>
+                        <li>Prepared print-ready files and coordinated with production teams.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Computer Operator</div>
+                    <div class="company">LGU Don Carlos</div>
+                    <div class="job-dates">2018 – 2021</div>
+                    <ul>
+                        <li>Handled documentation, encoding, and report preparation for community programs.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">Education</div>
+                <div class="education-item">
+                    <div class="edu-degree">Bachelor of Science in Information Technology (BSIT)</div>
+                    <div class="edu-school">Bukidnon State University</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-degree">Secondary Education</div>
+                    <div class="edu-school">Liangan National High School</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-degree">Primary Education</div>
+                    <div class="edu-school">Esperanza Elementary School</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">References</div>
+                <div class="references-list">
+                    <strong>Jessa Muriel Muit</strong> – HR Officer, Homesourced Inc.
+                    hr@homesourced.com<br><br>
+                    <strong>Davao Santos</strong> – HR Officer, MM Ermac Enterprises
+                    +63 991-721-8491
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
