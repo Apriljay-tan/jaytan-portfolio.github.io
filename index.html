@@ -1,243 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>April Jay Tan | Digital Marketing & Multi-Media Artist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official portfolio of April Jay Tan - Digital Marketing Specialist and Multi-Media Artist specializing in branding, video production, web design, and marketing strategy.">
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>April Jay Tan | Software Developer & Founder of Syntrix PH</title>
+  <meta name="description" content="Official portfolio of April Jay Tan, software developer and founder of Syntrix PH. Building web apps, websites, software systems, automation workflows, GHL and n8n integrations." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
 
-<!-- NAVIGATION -->
-<nav>
-    <div class="container nav-container">
-      <a href="#home" class="logo">APRIL JAY TAN</a>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Expertise</a></li>
-            <li><a href="#portfolio">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a href="#home" class="brand">April Jay Tan</a>
 
-<!-- HERO SECTION -->
-<section id="home" class="hero">
-    <div class="container hero-container">
+      <button class="mobile-menu-btn" type="button" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
 
-        <div class="hero-text">
-            <h1>April Jay Tan</h1>
-            <h2 class="hero-subtitle">
-                Digital Marketing Specialist & Multi-Media Artist
-            </h2>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-            <p>
-                Creative professional with 6+ years of experience in branding, video production, web design, and digital marketing.
-                From apparel brands to marketing leadership — I build visual systems that drive real business growth.
-            </p>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle dark / light mode">
+        <span class="toggle-icon toggle-sun">☀</span>
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        <span class="toggle-icon toggle-moon">☾</span>
+      </button>
+    </nav>
+  </header>
 
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Let's Work Together</a>
-               <a href="resume.html" class="btn btn-download">
-    View & Download Resume
-</a>
-            </div>
+  <main>
+    <section id="home" class="hero section-space">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><span></span>Available for new projects</div>
+          <h1>Software Developer</h1>
+          <p class="hero-kicker">Founder of Syntrix PH</p>
+          <p class="hero-story">
+            I started as a digital artist, using creativity to help brands stand out through design, visuals, and storytelling. Over time, that passion grew into building websites, web apps, software systems, and automation solutions. Today, as the founder of Syntrix PH, I create digital experiences that combine design, strategy, and technology to help businesses grow smarter.
+          </p>
+          <a class="site-link" href="https://www.syntrixph.com" target="_blank" rel="noopener">syntrixph.com <span>↗</span></a>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects <span>↗</span></a>
+            <a href="#contact" class="btn btn-soft">Let's Build Together <span>↗</span></a>
+            <a href="resume2.html" class="btn btn-outline">↓ View Resume</a>
+          </div>
         </div>
 
-        <div class="hero-image">
-            <img src="assets/profile.jpg" alt="April Jay Tan">
+        <div class="hero-visual reveal">
+          <div class="portrait-card">
+            <div class="sparkle">✦</div>
+            <div class="portrait-orbit orbit-one"></div>
+            <div class="portrait-orbit orbit-two"></div>
+            <img src="assets/profile.jpg" alt="April Jay Tan" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="portrait-fallback" aria-hidden="true">AJ</div>
+            <div class="floating-note"><span></span>Building digital solutions<br>that make an impact.</div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <section id="about" class="container panel reveal">
+      <div class="section-head split-head">
+        <h2>What I Build</h2>
+        <p>I create modern digital solutions that are scalable, efficient, and designed to solve real business problems.</p>
+      </div>
+      <div class="service-grid five-grid">
+        <article class="mini-card reveal-item">
+          <div class="icon blue">🌐</div>
+          <h3>Web Apps</h3>
+          <p>Custom web applications built for performance, workflows, and scalability.</p>
+        </article>
+        <article class="mini-card reveal-item">
+          <div class="icon cyan">▣</div>
+          <h3>Websites</h3>
+          <p>Modern, responsive websites that represent your brand and convert visitors.</p>
+        </article>
+        <article class="mini-card reveal-item">
+          <div class="icon purple">▰</div>
+          <h3>Software Systems</h3>
+          <p>Reliable systems that streamline operations and boost productivity.</p>
+        </article>
+        <article class="mini-card reveal-item">
+          <div class="icon green">⚡</div>
+          <h3>Automation Workflows</h3>
+          <p>Automate repetitive tasks and integrate tools to save time and resources.</p>
+        </article>
+        <article class="mini-card reveal-item">
+          <div class="icon pink">✎</div>
+          <h3>UI/UX Design</h3>
+          <p>Clean, intuitive layouts that make digital products easier to use.</p>
+        </article>
+      </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="section reveal">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            I am a digital marketing specialist and multi-media artist with over six years of hands-on experience in branding, graphic design, video production, web design, and marketing strategy.
-        </p>
-        <p>
-            During college days, I financed my education through creative work — designing apparel brands, producing marketing visuals, building websites, and working in multimedia environments including radio production.
-        </p>
-        <p>
-            Today, I lead marketing initiatives while continuing to create compelling digital experiences that help businesses grow with clarity and impact.
-        </p>
-    </div>
-</section>
-<section class="section stats reveal">
-    <div class="container">
-        <div class="stats-grid">
+    <section id="services" class="container panel reveal">
+      <div class="section-head split-head">
+        <h2>Services</h2>
+        <p>A practical blend of design, development, automation, and business-focused digital implementation.</p>
+      </div>
+      <div class="wide-grid">
+        <article class="feature-card reveal-item">
+          <span class="feature-number">01</span>
+          <h3>Business Websites</h3>
+          <p>Clean landing pages, company websites, portfolio sites, and conversion-focused pages built with responsive layouts.</p>
+        </article>
+        <article class="feature-card reveal-item">
+          <span class="feature-number">02</span>
+          <h3>Custom Web Apps</h3>
+          <p>Internal dashboards, booking systems, admin panels, CRM-style tools, and workflow platforms for growing businesses.</p>
+        </article>
+        <article class="feature-card reveal-item">
+          <span class="feature-number">03</span>
+          <h3>Automation & Integrations</h3>
+          <p>GHL, n8n, forms, pipelines, lead capture, API integrations, and smart automations that reduce manual work.</p>
+        </article>
+      </div>
+    </section>
 
-            <div class="stat reveal-item">
-                <h3>6+</h3>
-                <p>Years Experience</p>
-            </div>
+    <section id="stack" class="container panel reveal">
+      <div class="section-head split-head">
+        <h2>Tools / Stack</h2>
+        <p>Technologies and tools I use to build modern, reliable, and high-performing digital solutions.</p>
+      </div>
+      <div class="stack-pills">
+        <span><b>📊</b>GHL</span>
+        <span><b>🔗</b>n8n</span>
+        <span><b>🧡</b>HTML</span>
+        <span><b>💙</b>CSS</span>
+        <span><b>💛</b>JavaScript</span>
+        <span><b>🟥</b>Laravel</span>
+        <span><b>⚙️</b>API Integrations</span>
+      </div>
+    </section>
 
-            <div class="stat reveal-item">
-                <h3>100+</h3>
-                <p>Projects Completed</p>
-            </div>
-
-            <div class="stat reveal-item">
-                <h3>50+</h3>
-                <p>Brands Worked With</p>
-            </div>
-
-            <div class="stat reveal-item">
-            <h3>10+</h3>
-             <p>Industries Served</p>
-            </div>
-
+    <section id="projects" class="container panel reveal">
+      <div class="section-head row-head">
+        <div>
+          <h2>Featured Projects</h2>
+          <p>Click any card to see full project details.</p>
         </div>
-    </div>
-</section>
+        <a href="#contact" class="text-link">View all projects →</a>
+      </div>
+      <div class="project-grid">
 
-<!-- SERVICES -->
-<section id="services" class="section dark reveal">
-    <div class="container">
-        <h2>Core Expertise</h2>
-
-        <div class="grid">
-
-            <div class="card reveal-item">
-                <h3>Branding & Identity</h3>
-                <p>Logo design, brand systems, visual identity, and positioning strategy.</p>
+        <article class="project-card reveal-item popup-card"
+          data-modal-title="Travel App"
+          data-modal-category="Web Application"
+          data-modal-description="A tailored web application built for specific business needs and workflows. This travel planning app helps users discover destinations, book trips, and manage their travel itinerary all in one place — delivering a seamless experience from search to booking."
+          data-modal-tech="HTML,CSS,JavaScript,Laravel,API Integrations"
+          data-modal-image="assets/TRAVEL APP.jpg">
+          <div class="img-fill"><img src="assets/TRAVEL APP.jpg" alt="Travel App"></div>
+          <div class="project-body">
+            <div class="icon blue">▦</div>
+            <div>
+              <h3>Travel App</h3>
+              <p>A tailored web application built for specific business needs and workflows.</p>
             </div>
+          </div>
+        </article>
 
-            <div class="card reveal-item">
-                <h3>Video & Multimedia</h3>
-                <p>Video editing, promotional videos, motion graphics, and audio production.</p>
+        <article class="project-card reveal-item popup-card"
+          data-modal-title="Business Website"
+          data-modal-category="Website"
+          data-modal-description="A modern, responsive website designed to elevate brand presence and convert visitors into clients. Built with clean design principles, fast load times, and mobile-first layouts that create a strong first impression across all devices."
+          data-modal-tech="HTML,CSS,JavaScript"
+          data-modal-image="assets/work1.jpg">
+          <div class="img-fill"><img src="assets/work1.jpg" alt="Business Website"></div>
+          <div class="project-body">
+            <div class="icon green">🌐</div>
+            <div>
+              <h3>Business Website</h3>
+              <p>A modern, responsive website designed to elevate brand presence.</p>
             </div>
+          </div>
+        </article>
 
-            <div class="card reveal-item">
-                <h3>Web & Landing Pages</h3>
-                <p>Responsive websites, landing pages, HTML/CSS development, UI design.</p>
+        <article class="project-card reveal-item popup-card"
+          data-modal-title="Internal Software System"
+          data-modal-category="Software System"
+          data-modal-description="An internal system that improves efficiency and streamlines operations for growing businesses. Features include dashboard analytics, user management, task tracking, and workflow automation — all in one centralized platform."
+          data-modal-tech="Laravel,MySQL,JavaScript,PHP"
+          data-modal-image="assets/work2.jpg">
+          <div class="img-fill"><img src="assets/work2.jpg" alt="Internal Software System"></div>
+          <div class="project-body">
+            <div class="icon purple">▰</div>
+            <div>
+              <h3>Internal Software System</h3>
+              <p>An internal system that improves efficiency and streamlines operations.</p>
             </div>
+          </div>
+        </article>
 
-            <div class="card reveal-item">
-                <h3>Digital Marketing</h3>
-                <p>SEO, social media strategy, campaign management, and analytics.</p>
+        <article class="project-card reveal-item popup-card"
+          data-modal-title="Automation Workflow"
+          data-modal-category="Automation"
+          data-modal-description="An automated workflow that connects tools and reduces manual work using GHL and n8n integrations. This system automates lead capture, follow-up sequences, notifications, and data syncing across multiple platforms without manual intervention."
+          data-modal-tech="n8n,GHL,API Integrations,Webhooks"
+          data-modal-image="assets/work3.jpg">
+          <div class="img-fill"><img src="assets/work3.jpg" alt="Automation Workflow"></div>
+          <div class="project-body">
+            <div class="icon green">⚡</div>
+            <div>
+              <h3>Automation Workflow</h3>
+              <p>An automated workflow that connects tools and reduces manual work.</p>
             </div>
+          </div>
+        </article>
 
+      </div>
+    </section>
+
+    <section class="container panel reveal">
+      <div class="section-head row-head">
+        <div>
+          <h2>Video Projects</h2>
+          <p>Promo videos, reels, edits, and visual storytelling projects.</p>
         </div>
-    </div>
-</section>
+        <a href="#contact" class="text-link">View all videos →</a>
+      </div>
+      <div class="media-grid three-grid">
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section reveal">
-    <div class="container">
-        <h2>Selected Work</h2>
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Promo Video"
+          data-modal-category="Video Production"
+          data-modal-description="A professionally crafted promo video that captures the brand's essence and communicates key messages through compelling visuals, music, and storytelling. Ideal for product launches, brand awareness campaigns, and social media distribution."
+          data-modal-tech="Video Editing,Color Grading,Motion Graphics,Sound Design"
+          data-modal-image="assets/work4.jpg">
+          <div class="img-fill"><img src="assets/work4.jpg" alt="Promo Video"></div>
+          <h3>▣ Promo Video</h3>
+        </article>
 
-        <div class="portfolio-grid">
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Social Media Reels"
+          data-modal-category="Video Production"
+          data-modal-description="Engaging short-form video content optimized for Instagram Reels, TikTok, and Facebook. These reels are crafted to capture attention in the first 3 seconds and drive meaningful engagement through fast-paced edits and on-brand visuals."
+          data-modal-tech="Video Editing,Transitions,Text Animations,Audio Mixing">
+          <div class="img-fill img-fill--empty">▣</div>
+          <h3>▣ Social Media Reels</h3>
+        </article>
 
-            <!-- WEB DESIGN -->
-            <a href="https://drive.google.com/drive/folders/1FXD6m4TwV2SdyThJhAyAXcdWGxsjp_9W?usp=drive_link" target="_blank" class="portfolio-card reveal-item">
-                <img src="assets/work3.jpg" alt="Web Design">
-                <div class="portfolio-overlay">
-                    <h3>Web Design & Development</h3>
-                    <p>View Full Projects</p>
-                </div>
-            </a>
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Motion Graphics"
+          data-modal-category="Video Production"
+          data-modal-description="Dynamic motion graphics and animated visuals used for intros, explainer videos, logo animations, and visual effects. Each piece is crafted to bring brands and ideas to life through fluid movement and purposeful design."
+          data-modal-tech="After Effects,Motion Design,Animation,Visual Effects">
+          <div class="img-fill img-fill--empty">▣</div>
+          <h3>▣ Motion Graphics</h3>
+        </article>
 
-            <!-- BRAND IDENTITY -->
-            <a href="https://drive.google.com/drive/folders/1c5Pv2DrHLdde92zdKosvciFJJFtcgLZe?usp=drive_link" target="_blank" class="portfolio-card reveal-item">
-                <img src="assets/work1.jpg" alt="Brand Identity">
-                <div class="portfolio-overlay">
-                    <h3>Brand Identity Design</h3>
-                    <p>View Full Projects</p>
-                </div>
-            </a>
+      </div>
+    </section>
 
-            <!-- VIDEO -->
-            <a href="https://drive.google.com/drive/folders/18ENwpjsiF1KiT8CIb3S_hvZjTEMnW9g3?usp=drive_link" target="_blank" class="portfolio-card reveal-item">
-                <img src="assets/work4.jpg" alt="Video Production">
-                <div class="portfolio-overlay">
-                    <h3>Video Production & Multimedia</h3>
-                    <p>Watch Projects</p>
-                </div>
-            </a>
-
-            <!-- GRAPHIC -->
-            <a href="https://drive.google.com/drive/folders/1XiNovJ4yI0jE0cuF_VdtN6Z0Jm-Zs7yp?usp=drive_link" target="_blank" class="portfolio-card reveal-item">
-                <img src="assets/work2.jpg" alt="Graphic Design">
-                <div class="portfolio-overlay">
-                    <h3>Graphic & Apparel Design</h3>
-                    <p>View Designs</p>
-                </div>
-            </a>
-
+    <section class="container panel reveal">
+      <div class="section-head row-head">
+        <div>
+          <h2>Graphic Design</h2>
+          <p>Brand visuals, marketing creatives, print design, and digital graphics.</p>
         </div>
-    </div>
-</section>
-<!-- CASE STUDIES -->
-<section class="section dark reveal">
-    <div class="container">
-        <h2>Featured Case Studies</h2>
+        <a href="#contact" class="text-link">View all designs →</a>
+      </div>
+      <div class="media-grid four-grid">
 
-        <div class="case-grid">
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Branding Design"
+          data-modal-category="Graphic Design"
+          data-modal-description="Complete brand identity systems including logo design, color palettes, typography, and brand guidelines. Each brand is crafted to tell a unique story and create a lasting impression across all touchpoints and platforms."
+          data-modal-tech="Adobe Illustrator,Adobe Photoshop,Brand Strategy,Typography">
+          <div class="img-fill img-fill--empty">✺</div>
+          <h3>✺ Branding Design</h3>
+        </article>
 
-            <div class="case-card reveal-item">
-                <h3>Knowtify Alarm Website</h3>
-                <p>
-                    Designed and developed a high-converting security system website
-                    focused on SEO, branding, and lead generation.
-                </p>
-                <p><strong>Tools:</strong> HTML, CSS, SEO Strategy, Branding</p>
-                <a href="https://knowtifyalarm.com/"
-                   target="_blank" class="btn btn-outline">View Project</a>
-            </div>
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Social Media Graphics"
+          data-modal-category="Graphic Design"
+          data-modal-description="Eye-catching social media graphics and content templates designed for Facebook, Instagram, LinkedIn, and other platforms. Includes post designs, story templates, carousel layouts, and highlight covers tailored to each brand."
+          data-modal-tech="Adobe Photoshop,Canva,Content Strategy,Layout Design">
+          <div class="img-fill img-fill--empty">✺</div>
+          <h3>✺ Social Media Graphics</h3>
+        </article>
 
-            <div class="case-card reveal-item">
-                <h3>Apparel Brand Identity System</h3>
-                <p>
-                    Built complete brand identity including logo, typography,
-                    apparel mockups, and marketing visuals.
-                </p>
-                <p><strong>Tools:</strong> Illustrator, Photoshop, Brand Strategy</p>
-                <a href="https://drive.google.com/drive/folders/1c5Pv2DrHLdde92zdKosvciFJJFtcgLZe"
-                   target="_blank" class="btn btn-outline">View Project</a>
-            </div>
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Print Design"
+          data-modal-category="Graphic Design"
+          data-modal-description="Professional print-ready designs for flyers, brochures, business cards, banners, and other marketing materials. Every piece is designed with proper print specifications in mind to ensure crisp, high-quality results."
+          data-modal-tech="Adobe InDesign,Adobe Illustrator,Print Production,Layout Design">
+          <div class="img-fill img-fill--empty">✺</div>
+          <h3>✺ Print Design</h3>
+        </article>
 
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Marketing Creatives"
+          data-modal-category="Graphic Design"
+          data-modal-description="Strategic marketing creatives designed to drive conversions and brand awareness. Includes ad creatives, email banners, landing page graphics, and campaign visuals tailored to resonate with the target audience and achieve campaign goals."
+          data-modal-tech="Adobe Photoshop,Canva,Marketing Strategy,Ad Design">
+          <div class="img-fill img-fill--empty">✺</div>
+          <h3>✺ Marketing Creatives</h3>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="container panel reveal">
+      <div class="section-head row-head">
+        <div>
+          <h2>More Creative Work</h2>
+          <p>Websites, creative assets, and digital projects across different industries.</p>
         </div>
+        <a href="#contact" class="text-link">View all work →</a>
+      </div>
+      <div class="media-grid four-grid">
+
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Website Showcase"
+          data-modal-category="Web Design"
+          data-modal-description="A curated showcase of websites built across different industries — from corporate sites and e-commerce to portfolios and landing pages. Each project focuses on modern design aesthetics, fast performance, and exceptional user experience."
+          data-modal-tech="HTML,CSS,JavaScript,WordPress,Laravel">
+          <div class="img-fill img-fill--empty">🌐</div>
+          <h3>🌐 Website Showcase</h3>
+        </article>
+
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="App Interfaces"
+          data-modal-category="UI/UX Design"
+          data-modal-description="UI/UX design work for web and mobile applications — wireframes, prototypes, and polished interfaces that prioritize usability and visual clarity. Every design is built around real user flows, intuitive navigation, and thoughtful interaction patterns."
+          data-modal-tech="Figma,UI Design,UX Research,Prototyping">
+          <div class="img-fill img-fill--empty">▯</div>
+          <h3>▯ App Interfaces</h3>
+        </article>
+
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Creative Campaigns"
+          data-modal-category="Creative Direction"
+          data-modal-description="End-to-end creative campaigns that combine strategy, design, and storytelling. These projects span digital ads, social media campaigns, and brand activations — all crafted to connect authentically with the right audience and achieve measurable results."
+          data-modal-tech="Creative Strategy,Copywriting,Graphic Design,Social Media">
+          <div class="img-fill img-fill--empty">📣</div>
+          <h3>📣 Creative Campaigns</h3>
+        </article>
+
+        <article class="media-card reveal-item popup-card"
+          data-modal-title="Visual Concepts"
+          data-modal-category="Creative Direction"
+          data-modal-description="Experimental and concept-driven visual work — mood boards, art direction, and creative explorations that push the boundaries of design and storytelling. A creative space for ideas, aesthetics, and bold visual thinking."
+          data-modal-tech="Art Direction,Concept Design,Visual Storytelling,Adobe Creative Suite">
+          <div class="img-fill img-fill--empty">✦</div>
+          <h3>✦ Visual Concepts</h3>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="container cta-panel reveal">
+      <div class="avatar-mark"><source><img src="assets/favicon.png" alt=""></div>
+      <div>
+        <h2>Building digital experiences,<br>websites, apps, and systems.</h2>
+      </div>
+      <div class="cta-copy">
+        <p>Have a project in mind?</p>
+        <span>Let's build something great together.</span>
+      </div>
+      <a class="btn btn-primary" href="mailto:jay@jtanmediaworks.com">✉ Get in Touch</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 April Jay Tan. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:jay@jtanmediaworks.com" aria-label="Email">Email</a>
     </div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="section dark reveal">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Email: jay@jtanmediaworks.com</p>
-        <p>Phone: +63 994 535 9076</p>
-        <p>Let’s build something impactful together.</p>
+  </footer>
 
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/april-jay-tan-61a666339/" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com/apriljay.tan.395" target="_blank">Facebook</a>
-            <a href="https://github.com/jaytan-portfolio" target="_blank">GitHub</a>
-        </div>
-
+  <!-- Project detail modal -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="modal-image" id="modalImageWrap">
+        <div class="modal-image-fallback" id="modalImageFallback">▣</div>
+      </div>
+      <div class="modal-content">
+        <span class="modal-category" id="modalCategory"></span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-description" id="modalDescription"></p>
+        <div class="modal-tech" id="modalTech"></div>
+      </div>
     </div>
-</section>
+  </div>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p>© 2026 April Jay Tan. All Rights Reserved.</p>
-    </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
