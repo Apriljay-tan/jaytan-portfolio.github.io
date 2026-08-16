@@ -1558,3 +1558,130 @@ body {
     letter-spacing: -0.065em;
   }
 }
+
+/* =====================================================
+   2026 portfolio accuracy updates
+   ===================================================== */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 22px;
+}
+.hero-links .site-link { margin-top: 0; }
+
+.six-grid { grid-template-columns: repeat(3, 1fr); }
+
+.stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px;
+  color: #ffffff;
+}
+.project-visual-label {
+  font-size: .7rem;
+  font-weight: 850;
+  letter-spacing: .16em;
+  opacity: .82;
+}
+.project-visual strong {
+  margin-top: 2px;
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+.project-visual small {
+  margin-top: 12px;
+  font-size: .7rem;
+  font-weight: 750;
+  letter-spacing: .03em;
+  opacity: .82;
+}
+.travel-visual {
+  background: radial-gradient(circle at 82% 16%, rgba(255,255,255,.22), transparent 22%), linear-gradient(135deg, #0f172a 0%, #0f4c81 55%, #38bdf8 100%);
+}
+.liora-visual {
+  background: radial-gradient(circle at 82% 16%, rgba(255,255,255,.26), transparent 20%), linear-gradient(135deg, #132a1c 0%, #166534 55%, #4ade80 100%);
+}
+.crm-visual {
+  background: radial-gradient(circle at 82% 16%, rgba(255,255,255,.24), transparent 20%), linear-gradient(135deg, #1e1b4b 0%, #6d28d9 55%, #c084fc 100%);
+}
+
+.muted-label { pointer-events: none; opacity: .7; }
+.portfolio-links-grid .media-card { min-width: 0; }
+.portfolio-link-card { display: block; cursor: pointer; }
+.portfolio-link-card .img-fill { height: 190px; }
+.media-card-copy { padding: 18px 18px 20px; }
+.media-card-copy h3 { padding: 0; margin: 5px 0 8px; font-size: 1.04rem; }
+.media-card-copy p { color: var(--muted); font-size: .88rem; line-height: 1.65; min-height: 70px; }
+.media-kicker,
+.eyebrow {
+  display: inline-block;
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.media-link { display: inline-flex; margin-top: 14px; color: var(--text); font-size: .82rem; font-weight: 800; }
+.portfolio-link-card:hover .media-link { color: var(--accent); }
+.video-preview { position: relative; }
+.video-preview::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,23,42,.42), rgba(15,23,42,.04)); }
+.video-play {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  padding-left: 3px;
+  border-radius: 999px;
+  background: rgba(15,23,42,.72);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 38px rgba(15,23,42,.25);
+}
+
+.github-panel { overflow: hidden; }
+.github-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 30px; align-items: center; }
+.github-copy h2 { margin-top: 6px; font-size: clamp(1.9rem, 4vw, 3.2rem); letter-spacing: -.065em; line-height: 1; }
+.github-copy > p { margin-top: 18px; color: var(--muted); max-width: 500px; }
+.github-count { margin-top: 22px; display: flex; align-items: baseline; gap: 12px; }
+.github-count strong { font-size: clamp(2.6rem, 5vw, 4.4rem); line-height: 1; letter-spacing: -.08em; }
+.github-count span { color: var(--muted); font-weight: 700; }
+.github-btn { margin-top: 24px; }
+.github-shot {
+  display: block;
+  padding: 14px;
+  border-radius: 22px;
+  background: #0d1117;
+  border: 1px solid rgba(148,163,184,.2);
+  box-shadow: 0 22px 50px rgba(15,23,42,.18);
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+.github-shot:hover { transform: translateY(-4px); box-shadow: 0 28px 60px rgba(15,23,42,.24); }
+.github-shot img { width: 100%; height: auto; border-radius: 12px; }
+
+@media (max-width: 1050px) {
+  .six-grid { grid-template-columns: repeat(2, 1fr); }
+  .github-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 780px) {
+  .six-grid { grid-template-columns: 1fr; }
+  .portfolio-link-card .img-fill { height: 220px; }
+  .media-card-copy p { min-height: 0; }
+  .github-count { align-items: flex-start; flex-direction: column; gap: 5px; }
+}
