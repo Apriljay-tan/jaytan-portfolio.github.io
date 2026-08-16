@@ -89,7 +89,7 @@ function openProjectModal(card) {
   if (tech) {
     const label = document.createElement('span');
     label.className = 'modal-tech-label';
-    label.textContent = 'Tech & Tools';
+    label.textContent = 'Skills & Tools';
     modalTechEl.appendChild(label);
     tech.split(',').forEach(t => {
       const span = document.createElement('span');
