@@ -981,7 +981,8 @@ a.build-card:hover {
 .reach-wa { background: #25D366; }
 .reach-mail { background: #EA4335; }
 .reach-in { background: #0A66C2; }
-.progress-wrap { right: 23px !important; bottom: 196px !important; }
+.progress-wrap { right: 23px !important; bottom: 196px !important; pointer-events: none; }
+.progress-wrap.active-progress { pointer-events: auto; }
 @media (max-width: 767.98px) {
   .reach { right: 14px; bottom: 14px; }
   .progress-wrap { right: 15px !important; bottom: 188px !important; }

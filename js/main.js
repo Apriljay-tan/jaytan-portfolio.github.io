@@ -20,6 +20,9 @@
   var isti = {
     /* Init */
     init() {
+      if (window.ScrollTrigger) {
+        ScrollTrigger.config({ ignoreMobileResize: true });
+      }
       isti.imgToSvg(),
         isti.slider(),
         isti.customMouse(),
@@ -352,12 +355,15 @@
       }
     },
     lenisScrollAnimation() {
-      const lenis = new Lenis();
-      function raf(time) {
-        lenis.raf(time);
+      var phone = window.matchMedia("(max-width: 991px), (pointer: coarse)").matches;
+      if (!phone && typeof Lenis !== "undefined") {
+        const lenis = new Lenis({ smoothTouch: false });
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
         requestAnimationFrame(raf);
       }
-      requestAnimationFrame(raf);
 
       document.querySelectorAll('a[href^="#"]').forEach((el) => {
         el.addEventListener("click", (e) => {
