@@ -23,6 +23,9 @@
       if (window.ScrollTrigger) {
         ScrollTrigger.config({ ignoreMobileResize: true });
       }
+      if (window.matchMedia("(max-width: 991px), (pointer: coarse)").matches) {
+        jQuery(".progress-wrap").off("click");
+      }
       isti.imgToSvg(),
         isti.slider(),
         isti.customMouse(),
@@ -479,6 +482,7 @@
       });
     },
     scrollAnimation() {
+      if (window.matchMedia("(max-width: 991px), (pointer: coarse)").matches) return;
       const animations = document.querySelectorAll("[data-animation]");
       animations.forEach((animation) => {
         let direction = "fade-bottom",

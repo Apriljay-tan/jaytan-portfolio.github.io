@@ -790,7 +790,10 @@ a.build-card:hover {
 }
 
 @media (max-width: 1199.98px) {
-  html, body { overflow-x: hidden; }
+  html, body { overflow-x: clip; scroll-behavior: auto !important; }
+  .progress-wrap { display: none !important; }
+  html.motion .rise,
+  html.motion .rise.show { transform: none; }
   .main { padding-top: 62px; }
   .mobile_menu_icon {
     top: 0 !important;
