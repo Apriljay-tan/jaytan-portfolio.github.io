@@ -1,358 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>April Jay Tan | Software Developer & Multimedia Artist</title>
-  <meta name="description" content="Official portfolio of April Jay Tan, software developer, multimedia artist, and founder of Syntrix PH. Web apps, software systems, Python and Django development, Webflow, automation, brand identity, graphic design, video editing, and web design." />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="page-glow page-glow-one"></div>
-  <div class="page-glow page-glow-two"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of April Jay Tan, software developer, multimedia artist, and founder of Syntrix PH." />
+    <meta name="author" content="April Jay Tan" />
+    <title>April Jay Tan | Software Developer & Multimedia Artist</title>
+    <script>
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("motion");
+      }
+    </script>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="css/plugin.css" />
+    <link rel="stylesheet" href="css/spacing.css" />
+    <link rel="stylesheet" href="css/scroll_top.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="isti-icon/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
 
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="Main navigation">
-      <a href="#home" class="brand">April Jay Tan</a>
-
-      <button class="mobile-menu-btn" type="button" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#multimedia">Creative</a>
-        <a href="#stack">Stack</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle dark / light mode">
-        <span class="toggle-icon toggle-sun">☀</span>
-        <span class="toggle-track"><span class="toggle-thumb"></span></span>
-        <span class="toggle-icon toggle-moon">☾</span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero section-space">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="status-pill"><span></span>Available for new projects</div>
-          <h1>Software Developer</h1>
-          <p class="hero-kicker">Multimedia Artist • Founder of Syntrix PH</p>
-          <p class="hero-story">
-            I started as a digital artist, using creativity to help brands stand out through design, visuals, and storytelling. Over time, that passion grew into building websites, web apps, software systems, and automation solutions. Today, as the founder of Syntrix PH, I create digital experiences that combine design, strategy, and technology to help businesses grow smarter.
-          </p>
-          <div class="hero-links">
-            <a class="site-link" href="https://www.syntrixph.com" target="_blank" rel="noopener">syntrixph.com <span>↗</span></a>
-            <a class="site-link" href="https://github.com/Apriljay-tan" target="_blank" rel="noopener">GitHub <span>↗</span></a>
-          </div>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects <span>↗</span></a>
-            <a href="#contact" class="btn btn-soft">Let's Build Together <span>↗</span></a>
-            <a href="assets/April-Jay-Tan-Resume-2026.pdf" class="btn btn-outline" target="_blank" rel="noopener">↓ View Resume</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="portrait-card">
-            <div class="sparkle">✦</div>
-            <div class="portrait-orbit orbit-one"></div>
-            <div class="portrait-orbit orbit-two"></div>
-            <img src="assets/profile.jpg" alt="April Jay Tan" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
-            <div class="portrait-fallback" aria-hidden="true">AJ</div>
-            <div class="floating-note"><span></span>Building digital solutions<br>that make an impact.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container panel reveal">
-      <div class="section-head split-head">
-        <h2>What I Build</h2>
-        <p>I create modern digital solutions that are scalable, efficient, and designed to solve real business problems.</p>
-      </div>
-      <div class="service-grid six-grid">
-        <article class="mini-card reveal-item">
-          <div class="icon blue">🌐</div>
-          <h3>Web Apps</h3>
-          <p>Custom web applications built for performance, workflows, and scalability.</p>
-        </article>
-        <article class="mini-card reveal-item">
-          <div class="icon cyan">▣</div>
-          <h3>Websites</h3>
-          <p>Modern, responsive websites that represent your brand and convert visitors.</p>
-        </article>
-        <article class="mini-card reveal-item">
-          <div class="icon purple">▰</div>
-          <h3>Software Systems</h3>
-          <p>Reliable systems that streamline operations and boost productivity.</p>
-        </article>
-        <article class="mini-card reveal-item">
-          <div class="icon green">⚡</div>
-          <h3>Automation Workflows</h3>
-          <p>Automate repetitive tasks and integrate tools to save time and resources.</p>
-        </article>
-        <article class="mini-card reveal-item">
-          <div class="icon pink">✎</div>
-          <h3>UI/UX Design</h3>
-          <p>Clean, intuitive layouts that make digital products easier to use.</p>
-        </article>
-        <article class="mini-card reveal-item">
-          <div class="icon cyan">✦</div>
-          <h3>Multimedia Artistry</h3>
-          <p>Brand identity, graphic design, video editing, and web design backed by real project work.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="services" class="container panel reveal">
-      <div class="section-head split-head">
-        <h2>Services</h2>
-        <p>A practical blend of design, development, automation, and business-focused digital implementation.</p>
-      </div>
-      <div class="wide-grid">
-        <article class="feature-card reveal-item">
-          <span class="feature-number">01</span>
-          <h3>Business Websites</h3>
-          <p>Clean landing pages, company websites, portfolio sites, and conversion-focused pages built with responsive layouts.</p>
-        </article>
-        <article class="feature-card reveal-item">
-          <span class="feature-number">02</span>
-          <h3>Custom Web Apps</h3>
-          <p>Internal dashboards, booking systems, admin panels, CRM-style tools, and workflow platforms for growing businesses.</p>
-        </article>
-        <article class="feature-card reveal-item">
-          <span class="feature-number">03</span>
-          <h3>Automation & Integrations</h3>
-          <p>GHL, n8n, forms, pipelines, lead capture, API integrations, and smart automations that reduce manual work.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="stack" class="container panel reveal">
-      <div class="section-head split-head">
-        <h2>Tools / Stack</h2>
-        <p>Technologies and tools I use to build modern, reliable, and high-performing digital solutions.</p>
-      </div>
-      <div class="stack-pills">
-        <span><b>🐍</b>Python</span>
-        <span><b>◈</b>Django</span>
-        <span><b>🟥</b>Laravel</span>
-        <span><b>🧡</b>HTML</span>
-        <span><b>💙</b>CSS</span>
-        <span><b>💛</b>JavaScript</span>
-        <span><b>🌊</b>Webflow</span>
-        <span><b>📊</b>GHL</span>
-        <span><b>🔗</b>n8n</span>
-        <span><b>⚙️</b>API Integrations</span>
-      </div>
-    </section>
-
-    <section id="projects" class="container panel reveal">
-      <div class="section-head row-head">
-        <div>
-          <h2>Featured Projects</h2>
-          <p>Click any card to see full project details.</p>
-        </div>
-        <a href="https://github.com/Apriljay-tan" class="text-link" target="_blank" rel="noopener">View GitHub →</a>
-      </div>
-      <div class="project-grid">
-        <article class="project-card reveal-item popup-card"
-          data-modal-title="Travel Operations System"
-          data-modal-category="Web Application"
-          data-modal-description="A travel operations platform designed to organize inquiries, quotations, bookings, customer records, and day-to-day travel workflows in one system."
-          data-modal-tech="Laravel,JavaScript,Web Application"
-          data-modal-image="assets/SYNTRIXFLOW.png">
-          <div class="img-fill project-visual travel-visual">
-            <img src="assets/SYNTRIXFLOW.png" alt="Travel Operations System project preview">
-            <span class="project-visual-label">TRAVEL</span>
-            <strong>Operations System</strong>
-            <small>Inquiry • Quotation • Booking • CRM</small>
-          </div>
-          <div class="project-body">
-            <div class="icon blue">▦</div>
-            <div>
-              <h3>Travel Operations System</h3>
-              <p>Booking, inquiry, quotation, and customer management for travel operations.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal-item popup-card"
-          data-modal-title="LIORA SDA App"
-          data-modal-category="Mobile Application / Youth Ministry"
-          data-modal-description="An all-in-one faith resource application I created while serving as a youth president. LIORA SDA brings Bible lessons and hymnal content together in one accessible mobile experience for youth and church use. The app has been published on Google Play."
-          data-modal-tech=""
-          data-modal-image="assets/liora.jpeg">
-          <div class="img-fill project-visual liora-visual">
-            <img src="assets/liora.jpeg" alt="LIORA SDA App project preview">
-            <span class="project-visual-label">LIORA</span>
-            <strong>SDA App</strong>
-            <small>Bible Lessons • Hymnal • Youth</small>
-          </div>
-          <div class="project-body">
-            <div class="icon green">▣</div>
-            <div>
-              <h3>LIORA SDA App</h3>
-              <p>All-in-one Bible lesson and hymnal app created for youth and church use.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal-item popup-card"
-          data-modal-title="CRM & Lead Tracking"
-          data-modal-category="Business System"
-          data-modal-description="Lead capture and follow-up workflows designed to help businesses organize inquiries, track customer activity, and improve sales follow-up through structured CRM processes."
-          data-modal-tech="CRM,Lead Capture,Automation,Tracking">
-          <div class="img-fill project-visual crm-visual">
-            <span class="project-visual-label">CRM</span>
-            <strong>Lead Tracking</strong>
-            <small>Capture • Organize • Follow Up</small>
-          </div>
-          <div class="project-body">
-            <div class="icon purple">▰</div>
-            <div>
-              <h3>CRM & Lead Tracking</h3>
-              <p>Lead capture, tracking events, and follow-up workflows for business teams.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal-item popup-card"
-          data-modal-title="Knowtify Alarm Web Project"
-          data-modal-category="Web Design & Digital Marketing"
-          data-modal-description="Website and digital marketing work for Knowtify Alarm, including web page improvements, lead-generation support, Meta Pixel setup, and event tracking."
-          data-modal-tech="Web Design,Meta Pixel,Event Tracking,Lead Generation"
-          data-modal-image="assets/work3.jpg">
-          <div class="img-fill"><img src="assets/work3.jpg" alt="Knowtify Alarm website project"></div>
-          <div class="project-body">
-            <div class="icon green">🌐</div>
-            <div>
-              <h3>Knowtify Alarm Web Project</h3>
-              <p>Website design, tracking setup, and lead-generation support.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="multimedia" class="container panel reveal">
-      <div class="section-head row-head">
-        <div>
-          <h2>Multimedia Artistry</h2>
-          <p>Selected work from my actual portfolio folders across branding, graphic design, video production, and web design.</p>
-        </div>
-        <span class="text-link muted-label">Google Drive portfolio ↗</span>
-      </div>
-
-      <div class="media-grid four-grid portfolio-links-grid">
-        <a class="media-card reveal-item portfolio-link-card" href="https://drive.google.com/drive/folders/1c5Pv2DrHLdde92zdKosvciFJJFtcgLZe?usp=sharing" target="_blank" rel="noopener">
-          <div class="img-fill"><img src="assets/multimedia-brand-identity.jpg" alt="Brand identity portfolio preview"></div>
-          <div class="media-card-copy">
-            <span class="media-kicker">Multimedia Artistry</span>
-            <h3>Brand Identity</h3>
-            <p>Logo systems, identity concepts, and visual branding work.</p>
-            <span class="media-link">View full portfolio ↗</span>
-          </div>
-        </a>
-
-        <a class="media-card reveal-item portfolio-link-card" href="https://drive.google.com/drive/folders/1XiNovJ4yI0jE0cuF_VdtN6Z0Jm-Zs7yp?usp=sharing" target="_blank" rel="noopener">
-          <div class="img-fill"><img src="assets/multimedia-graphic-design.jpg" alt="Graphic design portfolio preview"></div>
-          <div class="media-card-copy">
-            <span class="media-kicker">Multimedia Artistry</span>
-            <h3>Graphic Design</h3>
-            <p>Marketing graphics, social content, campaign visuals, and print-ready design.</p>
-            <span class="media-link">View full portfolio ↗</span>
-          </div>
-        </a>
-
-        <a class="media-card reveal-item portfolio-link-card" href="https://drive.google.com/drive/folders/18ENwpjsiF1KiT8CIb3S_hvZjTEMnW9g3?usp=sharing" target="_blank" rel="noopener">
-          <div class="img-fill video-preview"><img src="assets/multimedia-video-editing.jpg" alt="Video editing portfolio preview"><span class="video-play">▶</span></div>
-          <div class="media-card-copy">
-            <span class="media-kicker">Multimedia Artistry</span>
-            <h3>Video Editing</h3>
-            <p>Marketing videos, promos, product edits, social content, and motion-focused work.</p>
-            <span class="media-link">View video portfolio ↗</span>
-          </div>
-        </a>
-
-        <a class="media-card reveal-item portfolio-link-card" href="https://drive.google.com/drive/folders/1FXD6m4TwV2SdyThJhAyAXcdWGxsjp_9W?usp=sharing" target="_blank" rel="noopener">
-          <div class="img-fill"><img src="assets/multimedia-web-design.jpg" alt="Web design portfolio preview"></div>
-          <div class="media-card-copy">
-            <span class="media-kicker">Multimedia Artistry</span>
-            <h3>Web Design</h3>
-            <p>Responsive websites, landing pages, conversion layouts, and front-end visual work.</p>
-            <span class="media-link">View full portfolio ↗</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="github" class="container panel reveal github-panel">
-      <div class="github-grid">
-        <div class="github-copy">
-          <span class="eyebrow">Development Activity</span>
-          <h2>GitHub in 2026</h2>
-          <div class="github-count"><strong>78</strong><span>contributions in 2026</span></div>
-          <p>My GitHub activity reflects ongoing development work across software, web applications, and product projects. The contribution snapshot below is current as of August 16, 2026.</p>
-          <a class="btn btn-soft github-btn" href="https://github.com/Apriljay-tan" target="_blank" rel="noopener">View GitHub Profile <span>↗</span></a>
-        </div>
-        <a class="github-shot" href="https://github.com/Apriljay-tan" target="_blank" rel="noopener" aria-label="View April Jay Tan on GitHub">
-          <img src="assets/github-contributions-2026.png" alt="GitHub contribution graph showing 78 contributions in 2026">
-        </a>
-      </div>
-    </section>
-
-    <section id="contact" class="container cta-panel reveal">
-      <div class="avatar-mark"><img src="assets/favicon.png" alt="April Jay Tan"></div>
-      <div>
-        <h2>Building digital experiences,<br>websites, apps, and systems.</h2>
-      </div>
-      <div class="cta-copy">
-        <p>Have a project in mind?</p>
-        <span>Let's build something great together.</span>
-      </div>
-      <a class="btn btn-primary" href="mailto:jay@jtanmediaworks.com">✉ Get in Touch</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2026 April Jay Tan. All rights reserved.</p>
-    <div class="footer-icons">
-      <a href="https://github.com/Apriljay-tan" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-      <a href="https://www.syntrixph.com" target="_blank" rel="noopener" aria-label="Syntrix PH">Syntrix PH</a>
-      <a href="mailto:jay@jtanmediaworks.com" aria-label="Email">Email</a>
+  <body>
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
     </div>
-  </footer>
 
-  <!-- Project detail modal -->
-  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-box">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
-      <div class="modal-image" id="modalImageWrap">
-        <div class="modal-image-fallback" id="modalImageFallback">
-          <img src="assets/liora.jpeg" alt="LIORA SDA App project preview">
-        </div>
+    <section class="tf__main_2">
+      <span class="mobile_menu_icon">
+        <i class="far fa-stream bar_icon"></i>
+        <i class="far fa-times close_icon"></i>
+        <span class="bar-name">April Jay Tan</span>
+      </span>
+      <div class="container-fluid">
+        <ul class="tf__main_manu_2">
+          <li>
+            <a href="#home" class="tf__logo_2">
+              <img src="assets/portrait.png" alt="April Jay Tan" class="img-fluid" />
+            </a>
+          </li>
+          <li><a href="#home" class="active"><i class="isti-home-21"></i></a></li>
+          <li><a href="#about"><i class="isti-user-square-converted"></i></a></li>
+          <li><a href="#experience"><i class="isti-briefcase"></i></a></li>
+          <li><a href="#work"><i class="isti-clipboard"></i></a></li>
+          <li><a href="#service"><i class="isti-path"></i></a></li>
+          <li><a href="#contact"><i class="isti-messages"></i></a></li>
+        </ul>
       </div>
-      <div class="modal-content">
-        <span class="modal-category" id="modalCategory"></span>
-        <h2 class="modal-title" id="modalTitle"></h2>
-        <p class="modal-description" id="modalDescription"></p>
-        <div class="modal-tech" id="modalTech"></div>
+    </section>
+
+    <div class="main">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <section id="home" class="tf__banner tf__banner_2 bg-fixed" style="background: url(assets/cover.jpg)">
+          <div class="container h-100">
+            <div class="row align-items-center h-100 hero-row">
+              <div class="col-xl-7 col-lg-7">
+                <div class="tf__banner_text tf__banner_text_2 hero-open">
+                  <h3 data-text-animation="rotate-in">Hello I'm Jed.</h3>
+                  <h1 data-text-animation="rotate-in">SOFTWARE DEVELOPER & MULTIMEDIA ARTIST</h1>
+                  <p>Founder of Syntrix PH. I bridge engineering and growth—building web applications, automated systems, and high-ROI ad campaigns (Google & Meta Ads, SEO). Partnering with businesses worldwide from concept to scale.</p>
+                  <ul class="d-flex flex-wrap">
+                    <li>
+                      <a href="assets/April-Jay-Tan-Resume-2026.pdf" class="tf__common_btn d-flex align-items-center download_btn" target="_blank" rel="noopener">Download Cv <i class="isti-download"></i></a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="tf__common_btn">Start a project</a>
+                    </li>
+                  </ul>
+                  <div class="hero-logos" aria-label="Client logos">
+                    <div class="hero-logos-track">
+                      <a href="https://diamondgarmentsph.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/diamond.png" alt="Diamond Garments" /></a>
+                      <a href="https://cebubeetours.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/cebu-bee.png" alt="Cebu Bee Tours" /></a>
+                      <a href="https://ostravelcebu.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/ostravel.png" alt="OS Travel Cebu" /></a>
+                      <span><img src="assets/logo/aligned/mm-ermac.png" alt="MM Ermac Enterprises" /></span>
+                      <a href="https://eshappytours.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/es-happy.png" alt="ES Happy Tours" /></a>
+                      <span><img src="assets/logo/aligned/3l.png" alt="3L Garments" /></span>
+                      <span><img src="assets/logo/aligned/emark.png" alt="Client logo" /></span>
+                      <span><img src="assets/logo/aligned/vector.png" alt="Client logo" /></span>
+                      <a href="https://diamondgarmentsph.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/diamond.png" alt="" /></a>
+                      <a href="https://cebubeetours.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/cebu-bee.png" alt="" /></a>
+                      <a href="https://ostravelcebu.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/ostravel.png" alt="" /></a>
+                      <span><img src="assets/logo/aligned/mm-ermac.png" alt="" /></span>
+                      <a href="https://eshappytours.com" target="_blank" rel="noopener"><img src="assets/logo/aligned/es-happy.png" alt="" /></a>
+                      <span><img src="assets/logo/aligned/3l.png" alt="" /></span>
+                      <span><img src="assets/logo/aligned/emark.png" alt="" /></span>
+                      <span><img src="assets/logo/aligned/vector.png" alt="" /></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="hero-float" src="jed.png" alt="Jed" />
+          <div class="hero-phone-frame hero-open hero-open-late">
+            <img class="hero-phone" src="assets/jedmobile.jpg" alt="April Jay Tan" />
+          </div>
+        </section>
+
+        <section class="tf__about about-bio" id="about">
+          <div class="container">
+            <div class="about-intro rise">
+              <div>
+                <p class="about-kicker">About Me</p>
+                <h2>Hybrid software engineer and growth specialist</h2>
+              </div>
+              <p class="about-lead">I am a hybrid Software Engineer and Growth Specialist with over a decade of experience spanning full-stack web development, digital marketing infrastructure, and multimedia design. I specialize in turning complex technical requirements into high-performing, user-centric web applications.</p>
+            </div>
+            <div class="about-split">
+              <div class="rise">
+                <h3>Core competencies</h3>
+                <ul class="about-list">
+                  <li>
+                    <strong>Full-stack development</strong>
+                    <span>Python, Django, PHP (Laravel), JavaScript, HTML5/CSS3, RESTful APIs, and webhook automation.</span>
+                  </li>
+                  <li>
+                    <strong>CRM and workflow automation</strong>
+                    <span>GoHighLevel, Webflow, n8n, Hostinger/Cloudflare infrastructure management, and database tracking.</span>
+                  </li>
+                  <li>
+                    <strong>Digital growth and performance</strong>
+                    <span>Advanced Google Ads and Meta Ads management, technical SEO, GA4/GTM conversion tracking, and lead-gen funnels.</span>
+                  </li>
+                  <li>
+                    <strong>Creative direction</strong>
+                    <span>Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro, After Effects) and AI-assisted generative media with Gemini, OpenAI ChatGPT, Cursor, and Higgsfield for AI content videos.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="rise">
+                <h3>Track record</h3>
+                <ul class="about-list">
+                  <li>
+                    <strong>Founder and lead developer, Syntrix PH</strong>
+                    <span>Directing web engineering, automation architecture, and client acquisition funnels.</span>
+                  </li>
+                  <li>
+                    <strong>Marketing and growth lead</strong>
+                    <span>Spearheaded go-to-market and growth campaigns for LifeSmart PH, Fine Upgrades, and Knowtify Alarm.</span>
+                  </li>
+                  <li>
+                    <strong>Frontend engineering and UI/UX</strong>
+                    <span>Responsive web solutions and digital interfaces for international clients, including PYN LLC and MM Ermac Enterprises.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-foot rise">
+              <div>
+                <h3>Education</h3>
+                <p class="about-edu">BS in Computer Engineering, Bukidnon State University</p>
+              </div>
+              <a href="experiences.html" class="tf__common_btn tf__blog_btn">read more</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="tool-band" id="tools">
+          <div class="container">
+            <div class="tool-band-intro rise">
+              <p>Tech stack</p>
+              <h2>Tools I am proficient in</h2>
+            </div>
+            <div class="stack-marquee" aria-label="Tools I am proficient in">
+              <div class="stack-row stack-row-left">
+                <ul>
+                  <li><img src="assets/tools/python.svg" alt="" /><span>Python</span></li>
+                  <li><img src="assets/tools/django.svg" alt="" /><span>Django</span></li>
+                  <li><img src="assets/tools/laravel.svg" alt="" /><span>Laravel</span></li>
+                  <li><img src="assets/tools/flutter.svg" alt="" /><span>Flutter</span></li>
+                  <li><img src="assets/tools/html5.svg" alt="" /><span>HTML</span></li>
+                  <li><img src="assets/tools/css.svg" alt="" /><span>CSS</span></li>
+                  <li><img src="assets/tools/javascript.svg" alt="" /><span>JavaScript</span></li>
+                  <li><img src="assets/tools/postgresql.svg" alt="" /><span>PostgreSQL</span></li>
+                  <li><img src="assets/tools/gunicorn.svg" alt="" /><span>Gunicorn</span></li>
+                  <li><img src="assets/tools/nginx.svg" alt="" /><span>Nginx</span></li>
+                  <li><img src="assets/tools/tauri.svg" alt="" /><span>Tauri</span></li>
+                  <li><img src="assets/tools/capacitor.svg" alt="" /><span>Capacitor</span></li>
+                </ul>
+                <ul aria-hidden="true">
+                  <li><img src="assets/tools/python.svg" alt="" /><span>Python</span></li>
+                  <li><img src="assets/tools/django.svg" alt="" /><span>Django</span></li>
+                  <li><img src="assets/tools/laravel.svg" alt="" /><span>Laravel</span></li>
+                  <li><img src="assets/tools/flutter.svg" alt="" /><span>Flutter</span></li>
+                  <li><img src="assets/tools/html5.svg" alt="" /><span>HTML</span></li>
+                  <li><img src="assets/tools/css.svg" alt="" /><span>CSS</span></li>
+                  <li><img src="assets/tools/javascript.svg" alt="" /><span>JavaScript</span></li>
+                  <li><img src="assets/tools/postgresql.svg" alt="" /><span>PostgreSQL</span></li>
+                  <li><img src="assets/tools/gunicorn.svg" alt="" /><span>Gunicorn</span></li>
+                  <li><img src="assets/tools/nginx.svg" alt="" /><span>Nginx</span></li>
+                  <li><img src="assets/tools/tauri.svg" alt="" /><span>Tauri</span></li>
+                  <li><img src="assets/tools/capacitor.svg" alt="" /><span>Capacitor</span></li>
+                </ul>
+              </div>
+              <div class="stack-row stack-row-right">
+                <ul>
+                  <li><img src="assets/tools/n8n.svg" alt="" /><span>n8n</span></li>
+                  <li><img src="assets/tools/webflow.svg" alt="" /><span>Webflow</span></li>
+                  <li class="stack-word"><span>GoHighLevel</span></li>
+                  <li><img src="assets/tools/photoshop.svg" alt="" /><span>Photoshop</span></li>
+                  <li><img src="assets/tools/illustrator.svg" alt="" /><span>Illustrator</span></li>
+                  <li><img src="assets/tools/premiere.svg" alt="" /><span>Premiere Pro</span></li>
+                  <li><img src="assets/tools/aftereffects.svg" alt="" /><span>After Effects</span></li>
+                  <li><img src="assets/tools/facebook.svg" alt="" /><span>Facebook Ads</span></li>
+                  <li><img src="assets/tools/googleads.svg" alt="" /><span>Google Ads</span></li>
+                  <li><img src="assets/tools/gemini.svg" alt="" /><span>Gemini</span></li>
+                  <li><img src="assets/tools/openai.svg" alt="" /><span>ChatGPT</span></li>
+                  <li><img src="assets/tools/cursor.svg" alt="" /><span>Cursor</span></li>
+                  <li class="stack-word"><span>Higgsfield</span></li>
+                </ul>
+                <ul aria-hidden="true">
+                  <li><img src="assets/tools/n8n.svg" alt="" /><span>n8n</span></li>
+                  <li><img src="assets/tools/webflow.svg" alt="" /><span>Webflow</span></li>
+                  <li class="stack-word"><span>GoHighLevel</span></li>
+                  <li><img src="assets/tools/photoshop.svg" alt="" /><span>Photoshop</span></li>
+                  <li><img src="assets/tools/illustrator.svg" alt="" /><span>Illustrator</span></li>
+                  <li><img src="assets/tools/premiere.svg" alt="" /><span>Premiere Pro</span></li>
+                  <li><img src="assets/tools/aftereffects.svg" alt="" /><span>After Effects</span></li>
+                  <li><img src="assets/tools/facebook.svg" alt="" /><span>Facebook Ads</span></li>
+                  <li><img src="assets/tools/googleads.svg" alt="" /><span>Google Ads</span></li>
+                  <li><img src="assets/tools/gemini.svg" alt="" /><span>Gemini</span></li>
+                  <li><img src="assets/tools/openai.svg" alt="" /><span>ChatGPT</span></li>
+                  <li><img src="assets/tools/cursor.svg" alt="" /><span>Cursor</span></li>
+                  <li class="stack-word"><span>Higgsfield</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tf__skill_2 pt_150" id="experience">
+          <div class="container">
+            <div class="site-preview-head build-head rise">
+              <div>
+                <p>Recent builds</p>
+                <h2>Systems and <span>apps</span></h2>
+              </div>
+              <p class="site-preview-note">Several other apps are still not on this list.</p>
+              <div class="site-preview-nav">
+                <button class="build-prev" type="button" aria-label="Previous builds"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="build-next" type="button" aria-label="Next builds"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="build-slider">
+              <a class="build-card" href="builds/syntrix-flow.html">
+                <div class="build-shot">
+                  <div class="build-fade">
+                    <img class="is-on" src="assets/syntrixflow_dashboard.png" alt="Syntrix Flow dashboard" />
+                    <img src="assets/syntrixflow_bookings.png" alt="Syntrix Flow bookings" />
+                    <img src="assets/syntrixflow_quotation.png" alt="Syntrix Flow quotation" />
+                    <img src="assets/syntrixflow_darquote.png" alt="Syntrix Flow quote draft" />
+                    <img src="assets/dark_syntrixflow.png" alt="Syntrix Flow operations" />
+                  </div>
+                </div>
+                <h3>Syntrix Flow</h3>
+                <p class="build-kind">Travel system</p>
+                <p>Quotations, bookings, calendar, documents, and day-to-day travel operations. Smart booking, seamless flow. Dispatch, drivers, and the tour paperwork stay in the same place from the first quote through the day of travel.</p>
+                <p class="build-stack">Python, Django, PostgreSQL, Gunicorn, Nginx, WhiteNoise, ReportLab, Tauri, Capacitor</p>
+              </a>
+              <a class="build-card" href="builds/stafforyx.html">
+                <div class="build-shot">
+                  <div class="build-fade">
+                    <img class="is-on" src="assets/stafforyx1.png" alt="Stafforyx" />
+                    <img src="assets/stafforyx2.png" alt="Stafforyx" />
+                    <img src="assets/stafforyx3.png" alt="Stafforyx" />
+                  </div>
+                </div>
+                <h3>Stafforyx</h3>
+                <p class="build-kind">HRIS system</p>
+                <p>An HR system for running staff work in one place. Employee records, attendance, leave, and payroll sit on one dashboard, so the daily staff work is not split across separate tools.</p>
+              </a>
+              <a class="build-card" href="builds/liora.html">
+                <div class="build-shot">
+                  <div class="build-fade is-phone">
+                    <img class="is-on" src="assets/liora.jpeg" alt="LIORA" />
+                    <img src="assets/liora2.jpeg" alt="LIORA" />
+                    <img src="assets/liora3.jpeg" alt="LIORA" />
+                    <img src="assets/liora4.jpeg" alt="LIORA" />
+                    <img src="assets/liora5.jpeg" alt="LIORA" />
+                    <img src="assets/liora6.jpeg" alt="LIORA" />
+                    <img src="assets/liora7.jpeg" alt="LIORA" />
+                  </div>
+                </div>
+                <h3>LIORA SDA</h3>
+                <p class="build-kind">Offline faith app</p>
+                <p>Available on Google Play Store. Studying meant jumping from a Bible app to the Sabbath School lesson and then the hymnal. LIORA, “My Light,” keeps them in one pocket: King James, Cebuano, and NLT, a quarterly lesson that fetches the new one, and a hymnal in English and Cebuano. It works offline.</p>
+                <p class="build-stack">Flutter</p>
+              </a>
+              <a class="build-card" href="builds/workspace-syntrix.html">
+                <div class="build-shot">
+                  <div class="build-fade">
+                    <img class="is-on" src="assets/workspace_admin.png" alt="Workspace Syntrix" />
+                    <img src="assets/workspace_admin2.png" alt="Workspace Syntrix" />
+                    <img src="assets/workspace_admin3.png" alt="Workspace Syntrix" />
+                    <img src="assets/workspace_admin4.png" alt="Workspace Syntrix" />
+                    <img src="assets/workspace_admin5.png" alt="Workspace Syntrix" />
+                  </div>
+                </div>
+                <h3>Workspace Syntrix</h3>
+                <p class="build-kind">Operations workspace</p>
+                <p>An all-in-one workspace for a digital business, so SaaS products and software can be watched from one place. Health, apps, and the products a studio is running can be checked from one console.</p>
+                <p class="build-stack">Python, Django</p>
+              </a>
+              <a class="build-card" href="builds/ai-sales.html">
+                <div class="build-shot">
+                  <div class="build-fade">
+                    <img class="is-on" src="assets/AI_sales.png" alt="AI Sales Agent" />
+                    <img src="assets/AI_sales2.png" alt="AI Sales Agent" />
+                    <img src="assets/Ai_SALES3.png" alt="AI Sales Agent" />
+                  </div>
+                </div>
+                <h3>AI Sales Agent</h3>
+                <p class="build-kind">Sales agent</p>
+                <p>Trained to do more than reply. It qualifies the lead, follows up, and works to close the deal. Built for a travel sales desk: it answers tour questions, checks the inquiry, and keeps the conversation moving toward a booking.</p>
+              </a>
+              <a class="build-card" href="builds/n8n.html">
+                <div class="build-shot">
+                  <div class="build-fade">
+                    <img class="is-on" src="assets/n8n_automation.png" alt="n8n automation" />
+                    <img src="assets/n8n_automation2.png" alt="n8n automation" />
+                  </div>
+                </div>
+                <h3>n8n Automation</h3>
+                <p class="build-kind">Travel agency flows</p>
+                <p>Practical automations for marketing, sales, and operations. They catch the repeat work a travel agency has to do. Inquiries, follow-ups, and the posting steps run as flows instead of being done by hand each time.</p>
+                <p class="build-stack">n8n</p>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 d-flex flex-wrap" data-animation="fade-bottom" data-offset="100">
+                  <h2>01</h2>
+                  <span class="tf__skill_2_icon"><i class="fal fa-long-arrow-up"></i></span>
+                  <div class="tf__single_skill_2_text">
+                    <h4>Syntrix PH</h4>
+                    <h5>Team Leader</h5>
+                    <span>Present</span>
+                    <p>Founder and team leader. Websites, web apps, CRM-style systems, and automation, from scope through delivery with the Syntrix PH team.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 d-flex flex-wrap" data-animation="fade-bottom" data-delay=".25" data-offset="100">
+                  <h2>02</h2>
+                  <span class="tf__skill_2_icon"><i class="fal fa-long-arrow-up"></i></span>
+                  <div class="tf__single_skill_2_text">
+                    <h4>LifeSmart PH</h4>
+                    <h5>Marketing Head Officer</h5>
+                    <span>2025 – 2026</span>
+                    <p>Marketing, websites, tracking, and a custom CRM across LifeSmart PH, Fine Upgrades, and Knowtify Alarm.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 d-flex flex-wrap" data-animation="fade-bottom" data-offset="100">
+                  <h2>03</h2>
+                  <span class="tf__skill_2_icon"><i class="fal fa-long-arrow-up"></i></span>
+                  <div class="tf__single_skill_2_text">
+                    <h4>PYN LLC</h4>
+                    <h5>Frontend Developer / Graphic Designer</h5>
+                    <span>2024 – 2025</span>
+                    <p>Frontend pages, funnels, campaign graphics, and video for PYN LLC / Homesourced Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 d-flex flex-wrap" data-animation="fade-bottom" data-delay=".25" data-offset="100">
+                  <h2>04</h2>
+                  <span class="tf__skill_2_icon"><i class="fal fa-long-arrow-up"></i></span>
+                  <div class="tf__single_skill_2_text">
+                    <h4>MM Ermac Enterprises</h4>
+                    <h5>Frontend Developer</h5>
+                    <span>2022 – 2024</span>
+                    <p>Frontend development for MM Ermac Enterprises, including Diamond Garments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="site-preview" id="work">
+          <div class="container">
+            <div class="site-preview-head rise">
+              <div>
+                <p>Working process</p>
+                <h2>Latest working <span>projects</span></h2>
+              </div>
+              <p class="site-preview-note">A few of the websites I have shipped. There are more that are not on this list yet.</p>
+              <div class="site-preview-nav">
+                <button class="site-prev" type="button" aria-label="Previous websites"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="site-next" type="button" aria-label="Next websites"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="site-slider">
+              <a class="site-card" href="https://kuyaelytours.com" target="_blank" rel="noopener">
+                <span class="site-frame"><img src="assets/previews/kuyaely.jpg" alt="Kuya Ely Tours homepage" /></span>
+                <strong>kuyaelytours.com</strong>
+              </a>
+              <a class="site-card" href="https://ostravelcebu.com" target="_blank" rel="noopener">
+                <span class="site-frame"><img src="assets/previews/ostravel.jpg" alt="OS Travel Cebu homepage" /></span>
+                <strong>ostravelcebu.com</strong>
+              </a>
+              <a class="site-card" href="https://diamondgarmentsph.com" target="_blank" rel="noopener">
+                <span class="site-frame"><img src="assets/previews/diamond.jpg" alt="Diamond Garments homepage" /></span>
+                <strong>diamondgarmentsph.com</strong>
+              </a>
+              <a class="site-card" href="https://cebubeetours.com" target="_blank" rel="noopener">
+                <span class="site-frame"><img src="assets/previews/cebubee.jpg" alt="Cebu Bee Tours homepage" /></span>
+                <strong>cebubeetours.com</strong>
+              </a>
+              <a class="site-card" href="https://cebuboholadventure.com" target="_blank" rel="noopener">
+                <span class="site-frame"><img src="assets/previews/bohol.jpg" alt="Cebu Bohol Adventure homepage" /></span>
+                <strong>cebuboholadventure.com</strong>
+              </a>
+              <a class="site-card" href="https://eshappytours.com" target="_blank" rel="noopener">
+                <span class="site-frame"><img src="assets/previews/eshappy.jpg" alt="ES Happy Tours homepage" /></span>
+                <strong>eshappytours.com</strong>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="offer" id="service">
+          <div class="container">
+            <div class="offer-head rise">
+              <div>
+                <p>Services</p>
+                <h2>What I build with teams and clients</h2>
+              </div>
+              <a href="mailto:jay@jtanmediaworks.com" class="tf__common_btn">Email Jay</a>
+            </div>
+            <div class="offer-services">
+              <article class="offer-card offer-card-lead rise">
+                <em>01</em>
+                <h3>Software development</h3>
+                <p>Websites, web apps, and business systems, including Laravel, JavaScript, Python, and Django.</p>
+              </article>
+              <article class="offer-card rise">
+                <em>02</em>
+                <h3>Multimedia</h3>
+                <p>Brand visuals, layout, and video with Photoshop, Illustrator, Premiere Pro, and After Effects. Higgsfield covers the AI content videos.</p>
+              </article>
+              <article class="offer-card rise">
+                <em>03</em>
+                <h3>Digital marketing</h3>
+                <p>Facebook Ads, Google Ads, SEO, and campaign strategy that turns attention into inquiries.</p>
+              </article>
+            </div>
+            <div class="offer-picks" id="projects">
+              <article class="rise">
+                <span>Web application</span>
+                <h3>Syntrix Flow</h3>
+                <p>Quotations, bookings, the calendar, and day-to-day travel operations. Python, Django.</p>
+              </article>
+              <article class="rise">
+                <span>Mobile application</span>
+                <h3>LIORA SDA</h3>
+                <p>Offline Bibles, quarterly lessons, and a hymnal in English and Cebuano. Flutter.</p>
+              </article>
+              <article class="rise">
+                <span>Business system</span>
+                <h3>CRM and lead tracking</h3>
+                <p>Inquiries, follow-up, and activity in one flow so a team can close more of the work.</p>
+              </article>
+              <article class="rise">
+                <span>Web design</span>
+                <h3>Knowtify Alarm</h3>
+                <p>Pages, lead generation, and event tracking, including the Meta Pixel.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <footer class="tf__footer contact-close" id="contact">
+          <div class="container">
+            <div class="contact-close-row rise">
+              <div>
+                <p class="contact-kicker">Contact</p>
+                <h2>Start a project</h2>
+                <p>April Jay Tan builds software and multimedia work through Syntrix PH. Open for project-based development and team-led builds. Studio in the Philippines.</p>
+              </div>
+              <div class="contact-marks">
+                <a href="mailto:jay@jtanmediaworks.com" aria-label="Email jay@jtanmediaworks.com" title="Email">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6.2A2.2 2.2 0 0 1 5.2 4h13.6A2.2 2.2 0 0 1 21 6.2v11.6a2.2 2.2 0 0 1-2.2 2.2H5.2A2.2 2.2 0 0 1 3 17.8V6.2zm1.4.55 7.05 4.7a1 1 0 0 0 1.1 0l7.05-4.7a.7.7 0 0 0-.8-1.15H5.2a.7.7 0 0 0-.8 1.15z"/></svg>
+                </a>
+                <a href="https://www.syntrixph.com" target="_blank" rel="noopener" class="contact-mark-word" aria-label="Syntrix PH" title="Syntrix PH">S</a>
+                <a href="https://github.com/Apriljay-tan" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .6C5.7.6.6 5.7.6 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.4 5.7 18.3.6 12 .6z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <section class="tf__copyright">
+          <div class="container">
+            <div class="col-xl-12">
+              <div class="tf__main_copyright d-flex flex-wrap justify-content-between">
+                <p>© 2026 April Jay Tan. All rights reserved.</p>
+                <ul class="d-flex flex-wrap">
+                  <li><a href="experiences.html" class="text_hover_animaiton">Experience</a></li>
+                  <li><a href="assets/April-Jay-Tan-Resume-2026.pdf" class="text_hover_animaiton" target="_blank" rel="noopener">Resume</a></li>
+                  <li><a href="#contact" class="text_hover_animaiton">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <div class="reach">
+      <a class="reach-wa" href="https://wa.me/639608605034" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 2.1 17.8L1 23l5.3-1.1A11 11 0 1 0 20.5 3.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-3.1.7.7-3-.2-.3A9 9 0 1 1 12 21zm5-6.6c-.3-.1-1.6-.8-1.8-.9-.3-.1-.5-.1-.7.2-.2.3-.8 1-.8 1.1-.2.2-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.2-.5 0-.1-.6-1.5-.8-2-.2-.6-.5-.5-.7-.5h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.6 4 3.4 3.4 0 0 0 2.2.6 2.5 2.5 0 0 0 1.7-1.1 2.1 2.1 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>
+      </a>
+      <a class="reach-mail" href="mailto:jay@jtanmediaworks.com" aria-label="Gmail">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6.2A2.2 2.2 0 0 1 5.2 4h13.6A2.2 2.2 0 0 1 21 6.2v11.6a2.2 2.2 0 0 1-2.2 2.2H5.2A2.2 2.2 0 0 1 3 17.8V6.2zm1.5.4 6.9 4.6a1 1 0 0 0 1.1 0L19.5 6.6a.7.7 0 0 0-.7-1.1H5.2a.7.7 0 0 0-.7 1.1z"/></svg>
+      </a>
+      <a class="reach-in" href="https://www.linkedin.com/in/april-jay-tan-61a666339/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.7 3.4A2.2 2.2 0 1 1 2.5 5.6 2.2 2.2 0 0 1 4.7 3.4zM3 8.7h3.4V21H3zm5.6 0H12v1.7h.1a3.7 3.7 0 0 1 3.4-1.8c3.6 0 4.3 2.4 4.3 5.5V21H16v-6.5c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V21H8.6z"/></svg>
+      </a>
+    </div>
+
+    <div class="progress-wrap c-pointer">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+
+    <script src="js/plugin.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/scroll_top.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(function () {
+        if (typeof $.fn.slick !== "function") return;
+
+        var $sites = $(".site-slider");
+        if ($sites.length) {
+          $sites.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3200,
+            dots: false,
+            arrows: false,
+            responsive: [
+              { breakpoint: 1200, settings: { slidesToShow: 2 } },
+              { breakpoint: 768, settings: { slidesToShow: 1 } }
+            ]
+          });
+          $(".site-prev").on("click", function () { $sites.slick("slickPrev"); });
+          $(".site-next").on("click", function () { $sites.slick("slickNext"); });
+        }
+
+        var $builds = $(".build-slider");
+        if (!$builds.length) return;
+        $builds.slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3400,
+          dots: false,
+          arrows: false,
+          responsive: [
+            { breakpoint: 1200, settings: { slidesToShow: 2 } },
+            { breakpoint: 768, settings: { slidesToShow: 1 } }
+          ]
+        });
+        $(".build-prev").on("click", function () { $builds.slick("slickPrev"); });
+        $(".build-next").on("click", function () { $builds.slick("slickNext"); });
+
+        var rises = document.querySelectorAll(".rise");
+        if (document.documentElement.classList.contains("motion") && "IntersectionObserver" in window) {
+          var seen = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("show");
+              seen.unobserve(entry.target);
+            });
+          }, { threshold: 0.12, rootMargin: "0px 0px -32px 0px" });
+          requestAnimationFrame(function () {
+            rises.forEach(function (node) { seen.observe(node); });
+          });
+        }
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        document.querySelectorAll(".build-fade").forEach(function (box) {
+          var imgs = box.querySelectorAll("img");
+          if (imgs.length < 2) return;
+          var i = 0;
+          setInterval(function () {
+            if (box.matches(":hover")) return;
+            var next = (i + 1) % imgs.length;
+            imgs[i].classList.remove("is-on");
+            imgs[next].classList.add("is-on");
+            i = next;
+          }, 3800);
+        });
+      });
+    </script>
+  </body>
 </html>
